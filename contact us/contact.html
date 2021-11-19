@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="contact-section">
+      <div class="contact-info">
+        <div>
+          <i class="fas fa-map-marker-alt"></i>Hay El Ashgar, Cairo, Egypt
+        </div>
+        <div><i class="fas fa-envelope"></i>mohammedhossam528@gmail.com</div>
+        <div><i class="fas fa-phone"></i>+20 1064764356</div>
+        <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 AM</div>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="contact" action="contact.html" method="post">
+          <input
+            type="text"
+            name="name"
+            class="text-box"
+            placeholder="Your Name"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="email"
+            name="email"
+            class="text-box"
+            placeholder="Your Email"
+            required
+            autocomplete="off"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+            autocomplete="off"
+          ></textarea>
+          <input type="submit" name="submit" class="send-btn" value="send" />
+        </form>
+      </div>
+    </div>
+    <!---------------------->
+  </body>
+</html>

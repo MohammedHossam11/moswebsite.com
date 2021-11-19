@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./groundbeef.css" />
+    <title>GroundBeef</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>GROUND BEEF RECIPES</h1>
+      <div class="row">
+        <div class="col">
+          <div class="feature-img">
+            <img src="./img/25 Ground Beef Recipes .jpg" width="100%" />
+            <img
+              src="./play.png"
+              class="play-btn"
+              onclick="playVideo('./vid/25 Ground Beef Recipes   Easy How To Recipe Compilation   Well Done.mp4')"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="./img/3 Easy Ground Beef Recipes.jpg" />
+              <img
+                src="./play.png"
+                class="play-btn"
+                onclick="playVideo('./vid/3 Easy Ground Beef Recipes.mp4')"
+              />
+            </div>
+            <p>
+              Ground beef, minced beef or beef mince is beef that has been
+              finely chopped with a knife.
+            </p>
+          </div>
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="./img/Spicy Mongolian Ground Beef.jpg" />
+              <img
+                src="./play.png"
+                class="play-btn"
+                onclick="playVideo('.vid/Spicy Mongolian Ground Beef EASY Recipe.mp4')"
+              />
+            </div>
+            <p>
+              meat grinder (American English) or mincing month or machine
+              (British English).
+            </p>
+          </div>
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="./img/3 Quick & Easy Ground Beef Recipes .jpg" />
+              <img
+                src="./play.png"
+                class="play-btn"
+                onclick="playVideo('.vid/3 Quick & Easy Ground Beef Recipes   Tastemade.mp4')"
+              />
+            </div>
+            <p>
+              It is used in many recipes including hamburgers and spaghetti
+              Bolognese.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-Player" id="videoPlayer">
+      <video width="100%" controls id="myVideo">
+        <source
+          src="./vid/25 Ground Beef Recipes   Easy How To Recipe Compilation   Well Done.mp4"
+        />
+      </video>
+      <img src="./close.png" class="close-btn" onclick="stopVideo()" />
+    </div>
+    <script>
+      var videoPlayer = document.getElementById("videoPlayer");
+      var myVideo = document.getElementById("myVideo");
+
+      function stopVideo() {
+        videoPlayer.style.display = "none";
+        myVideo.pause();
+        myVideo.currentTime = 0;
+      }
+      function playVideo(file) {
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+        myVideo.play();
+      }
+    </script>
+  </body>
+</html>
